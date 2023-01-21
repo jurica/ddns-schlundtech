@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<request>
+    <auth>
+        <user>{{ .user }}</user>
+        <password>{{ .password }}</password>
+        <context>{{ .context }}</context>
+        <!-- <token>{{ .token }}</token> -->
+    </auth>
+    <task>
+        <code>0205</code>
+        <zone>
+            <name>{{ .zone }}</name>
+        </zone>
+    </task>
+</request>

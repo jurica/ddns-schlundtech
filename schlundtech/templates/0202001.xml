@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<request>
+    <auth>
+        <user>{{ .user }}</user>
+        <password>{{ .password }}</password>
+        <context>{{ .context }}</context>
+        <!-- <token>{{ .token }}</token> -->
+    </auth>
+    <task>
+        <code>0202001</code>
+        <zone>
+            <name>{{ .zone }}</name>
+            <system_ns>{{ .system_ns }}</system_ns>
+        </zone>
+        <default>
+            <rr_rem>
+                <name>{{ .rr_name }}</name>
+                <type>{{ .rr_type }}</type>
+                <ttl>{{ .rr_ttl }}</ttl>
+                <value>{{ .rr_value_current }}</value>
+            </rr_rem>
+            <rr_add>
+                <name>{{ .rr_name }}</name>
+                <type>{{ .rr_type }}</type>
+                <ttl>{{ .rr_ttl }}</ttl>
+                <value>{{ .rr_value_updated }}</value>
+            </rr_add>
+        </default>
+    </task>
+</request>
